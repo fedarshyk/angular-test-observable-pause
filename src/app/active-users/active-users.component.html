@@ -1,0 +1,14 @@
+<h3>Active</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Username</th>
+    <th>E-Mail</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.username }}</td>
+    <td>{{ user.email }}</td>
+    <td><a [routerLink]="['/users', user.id]">Details</a></td>
+  </tr>
+</table>

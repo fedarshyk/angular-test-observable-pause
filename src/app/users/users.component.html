@@ -1,0 +1,23 @@
+<h2>Users</h2>
+
+
+<div class="wrapper">
+  <div class="timer">
+    <div #show id="show"></div>
+    <div class="control">
+      <button #pause id="pause">Pause</button>
+      <button #resume id="resume">Resume</button>
+      <button #restart id="restart" >Restart</button>
+    </div>
+    <span #pointer id="pointer"></span>
+  </div>
+</div>
+
+<ul>
+  <li><a routerLink="/users">All</a></li>
+  <li><a routerLink="/users/active">Active</a></li>
+  <li><button (click)="navigation.back()">Back with NavigationService</button></li>
+  <li><button (click)="test()">Test</button></li>
+  <li><button (click)="test2()">Test 2</button></li>
+</ul>
+<router-outlet></router-outlet>
